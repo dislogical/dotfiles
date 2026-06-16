@@ -76,6 +76,7 @@ plugins=(
 
 	1password
 
+	chezmoi
 	git
 	gitignore
 	gh
