@@ -1,5 +1,5 @@
 [tools]
-act = "0.2.88"
-ast-grep = "0.40.5"
+act = "latest"
+ast-grep = "latest"
 "github:Ataraxy-Labs/sem" = "latest"
-"github:cli/cli" = "2.94.0"
+"github:cli/cli" = "latest"
