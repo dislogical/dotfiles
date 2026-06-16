@@ -1,0 +1,9 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/env sh
+
+{{ if contains .chezmoi.osRelease.idLike "suse" }}
+sudo rpm --import https://downloads.1password.com/linux/keys/1password.asc
+sudo zypper addrepo --non-interactive https://downloads.1password.com/linux/rpm/stable/x86_64 1password
+sudo zypper install --non-interactive 1password 1password-cli
+{{ end }}
+{{ end }}
