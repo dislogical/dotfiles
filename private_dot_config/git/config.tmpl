@@ -33,15 +33,35 @@
 	program = "/opt/1Password/op-ssh-sign"
 {{ end }}
 
+[difftool]
+    guiDefault = true
+
+[mergetool]
+    guiDefault = true
+
 [init]
 	defaultBranch = "main"
+
+[status]
+    showStash = true
+
+[checkout]
+	workers = 0
+
+[rebase]
+    autoStash = true
 
 [fetch]
 	all = true
 	prune = true
+	parallel = 0
 
 [pull]
 	rebase = true
 
 [push]
 	autoSetupRemote = true
+	gpgSign = "if-asked"
+
+[submodule]
+    featchJobs = 0
