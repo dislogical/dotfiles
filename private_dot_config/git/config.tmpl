@@ -3,6 +3,9 @@
 	name = "Colden Cullen"
 	signingkey = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC1a7x9Jx0sc4GrdrKnS8loaDaS47MmP1A8RyK3h1lrbAH9x0Rkr6WtSMXwx/PYl/Ak5md+TFpiKOqSIuOLeGTh+w5DVETINDWhv4V7lejTTiU16hB7dkB34fJidMDmAf6JnYnaTBiUeNM/eA9QrMJsImdnK7E2ZHmW2O+3VrYf+dKOeaPIQCr0MTz15beIg9t5oRBNemljMM/lJiW0NoZCXeoMhIL3kuCoSLCE1cEBmT7yU2u7NL5jZ3QUtX3JH9drxevEByE9QEvIptTpnvDUoRAF4+HxpnIhTQp6UPC5dfkEO0+1MBDwSy8XBUjKriv5IKLLZj74krQfbBLi98ZH"
 
+[advice]
+	skippedCherryPicks = false
+
 [alias]
 	amend = "commit --amend --no-edit"
 	diff-upstream = "!git diff $(git rev-parse --abbrev-ref HEAD)..$(git rev-parse --abbrev-ref HEAD@{upstream})"
