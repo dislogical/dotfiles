@@ -1,5 +1,6 @@
 [tools]
 act = "latest"
 ast-grep = "latest"
+chezmoi = "latest"
 "github:Ataraxy-Labs/sem" = "latest"
 "github:cli/cli" = "latest"
