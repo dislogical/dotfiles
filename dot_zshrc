@@ -81,6 +81,7 @@ plugins=(
 	1password
 
 	chezmoi
+	jj
 	git
 	gitignore
 	gh
