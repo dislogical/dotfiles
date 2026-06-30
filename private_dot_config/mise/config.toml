@@ -2,5 +2,7 @@
 act = "latest"
 ast-grep = "latest"
 chezmoi = "latest"
+"forgejo:forgejo-contrib/forgejo-cli" = "latest"
+github-cli = "latest"
 "github:Ataraxy-Labs/sem" = "latest"
 "github:cli/cli" = "latest"
