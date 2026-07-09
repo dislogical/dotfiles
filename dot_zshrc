@@ -86,7 +86,7 @@ plugins=(
 	gitignore
 	gh
 	mise
-	vscode
+	rust
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -119,6 +119,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Setup mise completions
+fpath=(${XDG_DATA_HOME:-$HOME/.local/share}/mise-completions/zsh $fpath)
 
 # Keybindings
 

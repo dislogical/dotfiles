@@ -5,4 +5,14 @@ chezmoi = "latest"
 "forgejo:forgejo-contrib/forgejo-cli" = "latest"
 github-cli = "latest"
 "github:Ataraxy-Labs/sem" = "latest"
+"github:alltuner/mise-completions-sync" = "latest"
 "github:cli/cli" = "latest"
+"github:cmakefmt/cmakefmt" = "latest"
+"github:kristoff-it/superhtml" = "latest"
+prek = "latest"
+rust = "latest"
+
+[hooks]
+postinstall = [
+  "misecompsync"
+]
