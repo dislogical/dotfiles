@@ -1,3 +1,6 @@
+[settings]
+experimental = true
+
 [tools]
 act = "latest"
 ast-grep = "latest"
