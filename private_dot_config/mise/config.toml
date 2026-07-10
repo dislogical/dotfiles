@@ -4,7 +4,7 @@ experimental = true
 [tools]
 act = "latest"
 ast-grep = "latest"
-chezmoi = "latest"
+"github:twpayne/chezmoi" = "latest"
 "forgejo:forgejo-contrib/forgejo-cli" = "latest"
 github-cli = "latest"
 "github:Ataraxy-Labs/sem" = "latest"
