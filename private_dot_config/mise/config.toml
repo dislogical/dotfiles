@@ -7,9 +7,8 @@ cargo.binstall_native = true
 [tools]
 act = "latest"
 ast-grep = "latest"
-"github:twpayne/chezmoi" = "latest"
 "forgejo:forgejo-contrib/forgejo-cli" = "latest"
-github-cli = "latest"
+"github:twpayne/chezmoi" = "latest"
 "github:Ataraxy-Labs/sem" = "latest"
 "github:alltuner/mise-completions-sync" = "latest"
 "github:cli/cli" = "latest"
