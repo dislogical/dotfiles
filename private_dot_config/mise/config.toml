@@ -16,6 +16,7 @@ ast-grep = "latest"
 "github:kristoff-it/superhtml" = "latest"
 prek = "latest"
 rust = "latest"
+topgrade = "latest"
 
 [hooks]
 postinstall = [
