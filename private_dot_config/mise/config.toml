@@ -2,7 +2,6 @@ min_version = "2026.7.1"
 
 [settings]
 experimental = true
-cargo.binstall_native = true
 
 [tools]
 act = "latest"
@@ -17,6 +16,9 @@ ast-grep = "latest"
 prek = "latest"
 rust = "latest"
 topgrade = "latest"
+"cargo:cargo-update" = "latest"
+"cargo:cargo-binstall" = "latest"
+eza = "latest"
 
 [hooks]
 postinstall = [
