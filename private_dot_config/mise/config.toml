@@ -20,6 +20,7 @@ topgrade = "latest"
 "cargo:cargo-binstall" = "latest"
 eza = "latest"
 dotnet = "latest"
+git-lfs = "latest"
 
 [hooks]
 postinstall = [
