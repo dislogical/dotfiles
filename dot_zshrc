@@ -122,6 +122,11 @@ source $ZSH/oh-my-zsh.sh
 
 alias ls="eza --icons --hyperlink=always"
 
+for appid in $(flatpak list --json --app | jq -r '.[].application_id'); do
+	cmd="$(flatpak info -m $appid | awk -F= '/^command=/ {print $2}')"
+	alias "${cmd}"="flatpak run $appid"
+done
+
 # Setup mise completions
 fpath=(${XDG_DATA_HOME:-$HOME/.local/share}/mise-completions/zsh $fpath)
 
