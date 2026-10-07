@@ -4,23 +4,30 @@ min_version = "2026.7.1"
 experimental = true
 
 [tools]
+# general utilities
+"github:twpayne/chezmoi" = "latest"
+topgrade = "latest"
+eza = "latest"
+"github:alltuner/mise-completions-sync" = "latest"
+
+# languages
+rust = "latest"
+go = "latest"
+dotnet = "latest"
+
+# dev tools
 act = "latest"
+prek = "latest"
+git-lfs = "latest"
 ast-grep = "latest"
 "forgejo:forgejo-contrib/forgejo-cli" = "latest"
-"github:twpayne/chezmoi" = "latest"
-"github:Ataraxy-Labs/sem" = "latest"
-"github:alltuner/mise-completions-sync" = "latest"
 "github:cli/cli" = "latest"
+"github:Ataraxy-Labs/sem" = "latest"
 "github:cmakefmt/cmakefmt" = "latest"
 "github:kristoff-it/superhtml" = "latest"
-prek = "latest"
-rust = "latest"
-topgrade = "latest"
+
 "cargo:cargo-update" = "latest"
 "cargo:cargo-binstall" = "latest"
-eza = "latest"
-dotnet = "latest"
-git-lfs = "latest"
 
 [hooks]
 postinstall = [
