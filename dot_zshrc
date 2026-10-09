@@ -69,19 +69,25 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # or else we will use the default cache/
 ZSH_CACHE_DIR=${XDG_CACHE_HOME:-$HOME/.cache}/oh-my-zsh
 
+zstyle ':omz:plugins:eza' hyperlinks yes
+zstyle ':omz:plugins:eza' icons yes
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+	suse
+
 	zsh-autosuggestions
 	zsh-syntax-highlighting
+	command-not-found
+	eza
 
 	1password
 
 	chezmoi
-	jj
 	git
 	gitignore
 	gh
@@ -120,9 +126,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias ls="eza --icons --hyperlink=always"
-
-for appid in $(flatpak list --json --app | jq -r '.[].application_id'); do
+for appid in $(flatpak list --app --columns=application:full); do
 	cmd="$(flatpak info -m $appid | awk -F= '/^command=/ {print $2}')"
 	alias "${cmd}"="flatpak run $appid"
 done
