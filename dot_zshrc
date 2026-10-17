@@ -134,6 +134,8 @@ done
 # Setup mise completions
 fpath=(${XDG_DATA_HOME:-$HOME/.local/share}/mise-completions/zsh $fpath)
 
+export EDITOR=hx
+
 # Keybindings
 
 bindkey '^H' backward-kill-word
